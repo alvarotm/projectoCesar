@@ -39,9 +39,9 @@ class Actores extends Controller {
                     "self" => $_ENV['APP_URL'] . '/actor/' . $actor['id']
                 ]
             ];
-            $this->echoResponse(false, 200, $data);
+            $this->echoResponse(false, 200, 'tq bien');
         } else {
-            $this->echoResponse(true, 404, $data);
+            $this->echoResponse(true, 404, 'ta mal');
         }
 
     }
